@@ -1,0 +1,44 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  height: 100vh;
+  display: flex;
+  background-image: url(./img/background.jpg);
+}
+
+.game{
+  width: 490px;
+  height: 640px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  background: whitesmoke; 
+  border-radius: 10px;
+}
+
+.card{
+  width: calc(25% - 10px);
+  height: calc(25% - 10px);
+  margin: 5px;
+  position: relative;
+  background-size: cover;
+  display: flex;
+}
+
+.card > img{
+  width: 70%;
+  margin: auto;
+  display: none;
+}
+
+#baraja{
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  bottom: 0;
+  max-height: 330px;
+}
